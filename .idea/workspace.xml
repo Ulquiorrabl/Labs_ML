@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c21c3965-de0b-473d-9d6c-b44947455e39" name="Default Changelist" comment="" />
+    <list default="true" id="c21c3965-de0b-473d-9d6c-b44947455e39" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/L1_v.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L2_v.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/l1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/l2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/l2_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/l3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Vladislav Eremo &lt;52752021+ulquiorrabl@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1idBpiYHs5RTx5hBGUoVeG2NTyi" />
@@ -43,6 +56,14 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="414" y="209" width="1092" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603445082191">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="414" y="209" width="1092" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1603445082191" />
+    <state x="614" y="149" key="CommitChangelistDialog2" timestamp="1603445068236">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="614" y="149" key="CommitChangelistDialog2/0.30.1920.1050@0.30.1920.1050" timestamp="1603445068236" />
     <state x="895" y="308" key="FileChooserDialogImpl" timestamp="1602229278710">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
