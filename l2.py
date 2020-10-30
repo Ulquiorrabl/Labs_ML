@@ -16,9 +16,7 @@ import numpy as np
 # tmp_file = open(tmp_filename, "wb")
 # tmp_csv = csv.writer (tmp_file, delimiter=',', quotechar='"')
 
-tests = 10
-linearExamples = 100
-perceptronExamples = 10
+
 
 
 # Create the points in the range [-1,1] X [-1,1],
@@ -52,7 +50,6 @@ def createExampl2(nExamples):
         N.append([x, label])
     return N
 
-
 # Define the h(x) value of a point for a given w
 # return +1 or -1
 def evaluateg(ex, w):
@@ -67,11 +64,45 @@ def evaluateg(ex, w):
 
 
 def g1(ex):
+    g = -1 - 0.05 * ex[1] + 0.08 * ex[2] + 0.13 * ex[1] * ex[2] + 1.5 * ex[1] * ex[1] + 1.5 * ex[2] * ex[2]
+    if g > 0:
+        return 1
+    else:
+        return -1
+
+
+def g2(ex):
     g = -1 - 0.05 * ex[1] + 0.08 * ex[2] + 0.13 * ex[1] * ex[2] + 1.5 * ex[1] * ex[1] + 15 * ex[2] * ex[2]
     if g > 0:
         return 1
     else:
         return -1
+
+
+def g3(ex):
+    g = -1 - 0.05 * ex[1] + 0.08 * ex[2] + 0.13 * ex[1] * ex[2] + 15 * ex[1] * ex[1] + 1.5 * ex[2] * ex[2]
+    if g > 0:
+        return 1
+    else:
+        return -1
+
+
+def g4(ex):
+    g = -1 - 1.5 * ex[1] + 0.08 * ex[2] + 0.13 * ex[1] * ex[2] + 0.05 * ex[1] * ex[1] + 0.05 * ex[2] * ex[2]
+    if g > 0:
+        return 1
+    else:
+        return -1
+
+
+def g5(ex):
+    g = -1 - 0.05 * ex[1] + 0.08 * ex[2] + 1.5 * ex[1] * ex[2] + 0.15 * ex[1] * ex[1] + 15 * ex[2] * ex[2]
+    if g > 0:
+        return 1
+    else:
+        return -1
+
+
 
 
 # Learning algorith of Linear Regression
@@ -147,8 +178,10 @@ def perceptronTraining(N, w):
             randomPoint = misclassifiedPointsList[random.randint(0, len(misclassifiedPointsList) - 1)]
             w = w + np.dot(randomPoint[0], randomPoint[1])
     return nIterations
-
-
+# Parameters
+tests = 10
+linearExamples = 100
+perceptronExamples = 10
 m = 0
 q = 0
 # tmp_csv.writerow (["Ein::number", "Eout::number", "Perceptron Iterations::number"])
@@ -182,7 +215,7 @@ for t in range(1, tests + 1):
 # tmp_csv.writerow ([str(Ein), str(Eout), str(nIterationsToConverg)])
 
 # tmp_file.close()
-print(Ein / tests, Eout / tests, nIterationsToConverg / tests)
+print("2.Linear regression E_in error:{0} \n3.Linear regression E_out error:{1} \n4.Average PLA iterations:{2}".format(Ein / tests, Eout / tests, nIterationsToConverg / tests)) #2. 3, 4
 # os.rename (tmp_filename, out_filename)
 GList = [0, 0, 0, 0, 0]
 for i in range(tests + 1):
@@ -197,8 +230,16 @@ for i in range(tests + 1):
     randompoint = [1, x1, x2, x1 * x2, x1 ** 2, x2 ** 2]
     if evaluateg(randompoint, wnew) == g1(randompoint[1:]):
         GList[0] += 1
+    if evaluateg(randompoint, wnew) == g2(randompoint[1:]):
+        GList[1] += 1
+    if evaluateg(randompoint, wnew) == g3(randompoint[1:]):
+        GList[2] += 1
+    if evaluateg(randompoint, wnew) == g4(randompoint[1:]):
+        GList[3] += 1
+    if evaluateg(randompoint, wnew) == g5(randompoint[1:]):
+        GList[4] += 1
     testPoints = createExampl2(1000)
     transformPoints = TransformData(testPoints)
     Eout += calculateE(transformPoints, wnew)
 
-print(Ein / tests, Eout / tests, GList)
+print("5.Linear Regression Inclusive errors: {0} \n6.Number of classified examples for g: {2} \n7.Exclusive errors: {1}".format(Ein / tests, Eout / tests, GList))
