@@ -146,6 +146,19 @@ def makeNoise(points, percentage):
     return points
 
 
+def makeNoise2(points, percentage):
+    newPoints = []
+    for i in range(len(points)):
+        if random.uniform(0, 1) <= 1/percentage:
+            temp = points[i]
+            temp[1] = -1 * temp[1]
+            newPoints.append(temp)
+        else:
+            newPoints.append(points[i])
+    return newPoints
+
+
+
 def TransformData(points):
     datas_transformed = []
     for point in points:
@@ -179,7 +192,8 @@ def perceptronTraining(N, w):
             w = w + np.dot(randomPoint[0], randomPoint[1])
     return nIterations
 # Parameters
-tests = 10
+tests = 1000
+gtests = 10
 linearExamples = 100
 perceptronExamples = 10
 m = 0
@@ -220,26 +234,29 @@ print("2.Linear regression E_in error:{0} \n3.Linear regression E_out error:{1} 
 GList = [0, 0, 0, 0, 0]
 for i in range(tests + 1):
     points = createExampl2(1000)
-    testPoints = makeNoise(points, 10)
+    testPoints = makeNoise2(points, 10)
     w = linearRegressionTraining(testPoints)
     Ein += calculateE(testPoints, w)
     transformPoints = TransformData(testPoints)
     wnew = linearRegressionTraining(transformPoints)
     x1 = random.uniform(-1, 1)
     x2 = random.uniform(-1, 1)
-    randompoint = [1, x1, x2, x1 * x2, x1 ** 2, x2 ** 2]
-    if evaluateg(randompoint, wnew) == g1(randompoint[1:]):
-        GList[0] += 1
-    if evaluateg(randompoint, wnew) == g2(randompoint[1:]):
-        GList[1] += 1
-    if evaluateg(randompoint, wnew) == g3(randompoint[1:]):
-        GList[2] += 1
-    if evaluateg(randompoint, wnew) == g4(randompoint[1:]):
-        GList[3] += 1
-    if evaluateg(randompoint, wnew) == g5(randompoint[1:]):
-        GList[4] += 1
+    for j in range(gtests):
+        randompoint = [1, x1, x2, x1 * x2, x1 ** 2, x2 ** 2]
+        if evaluateg(randompoint, wnew) == g1(randompoint[1:]):
+            GList[0] += 1
+        if evaluateg(randompoint, wnew) == g2(randompoint[1:]):
+            GList[1] += 1
+        if evaluateg(randompoint, wnew) == g3(randompoint[1:]):
+            GList[2] += 1
+        if evaluateg(randompoint, wnew) == g4(randompoint[1:]):
+            GList[3] += 1
+        if evaluateg(randompoint, wnew) == g5(randompoint[1:]):
+            GList[4] += 1
     testPoints = createExampl2(1000)
     transformPoints = TransformData(testPoints)
     Eout += calculateE(transformPoints, wnew)
-
-print("5.Linear Regression Inclusive errors: {0} \n6.Number of classified examples for g: {2} \n7.Exclusive errors: {1}".format(Ein / tests, Eout / tests, GList))
+#Percents
+for i in range(len(GList)):
+    GList[i] = GList[i] / (tests*gtests) * 100
+print("5.Linear Regression Inclusive errors: {0} \n6.Percent of classified examples for g: {2} \n7.Exclusive errors: {1}".format(Ein / tests, Eout / tests, GList))
