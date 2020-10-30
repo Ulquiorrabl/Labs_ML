@@ -7,7 +7,9 @@ import requests
 # url="http://www.amlbook.com/data/zip/features.train"
 # s=requests.get(url).content
 # c=pd.read_csv(io.StringIO(s.decode('utf-8')))
-cols=['A', 'B',"C"]
+cols=['A', 'B', "C"]
+
+
 def ReadData(url):
     data = pd.read_csv(url,header=None,names=cols, sep='\s+')
     data=pd.DataFrame(data)
@@ -16,15 +18,17 @@ def ReadData(url):
     X=[d[1:] for d in Xx]
     return X,y
 
+
 def ExtractDigit1(X,y,digit):
     X_d,y_d=[],[]
     for i in range(len(y)):
         X_d.append(X[i])
-        if y[i]==digit:
+        if y[i] == digit:
             y_d.append(1)
         else:
             y_d.append(-1)
     return  X_d,y_d
+
 
 def ExtractDigit2(X,y,digit1,digit2):
     X_d,y_d=[],[]
@@ -38,6 +42,7 @@ def ExtractDigit2(X,y,digit1,digit2):
             X_d.append(X[i])
             y_d.append(-1)
     return  X_d,y_d
+
 
 C_s = 10**np.linspace(-4,0, num=5)
 X_train,y_train=ReadData("http://www.amlbook.com/data/zip/features.train")
