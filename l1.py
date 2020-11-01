@@ -61,7 +61,7 @@ def Err(testPoints, w):
         res = evaluateg(ex[0], w)
         if res != ex[1]:
             er_points += 1
-    return er_points / 10000
+    return er_points / len(testPoints)
 
 
 x1 = random.uniform(-1, 1)

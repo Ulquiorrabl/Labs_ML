@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c21c3965-de0b-473d-9d6c-b44947455e39" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/l3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l2.py" beforeDir="false" afterPath="$PROJECT_DIR$/l2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tasks/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l1.py" beforeDir="false" afterPath="$PROJECT_DIR$/l1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,15 +28,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1idBpiYHs5RTx5hBGUoVeG2NTyi" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/AIserver(3).py" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -43,7 +49,49 @@
       <recent name="F:\Repositories\Labs_ML\Tasks" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.l3">
+    <configuration name="AIserver(3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ML_Labs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="D:/" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:/AIserver(3).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="l1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ML_Labs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/l1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="l2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ML_Labs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -65,8 +113,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="l3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ML_Labs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/l3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.l3" />
+        <item itemvalue="Python.AIserver(3)" />
+        <item itemvalue="Python.l1" />
         <item itemvalue="Python.l2" />
       </list>
     </recent_temporary>
@@ -103,6 +175,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="1, 2, 4" />
     <option name="LAST_COMMIT_MESSAGE" value="1, 2, 4" />
   </component>
@@ -123,34 +196,34 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="184" y="117" key="DiffContextDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1604051206707" />
-    <state x="895" y="308" key="FileChooserDialogImpl" timestamp="1602229278710">
+    <state x="895" y="308" key="FileChooserDialogImpl" timestamp="1604237982205">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="895" y="308" key="FileChooserDialogImpl/0.30.1920.1050@0.30.1920.1050" timestamp="1602229278710" />
-    <state width="1446" height="287" key="GridCell.Tab.0.bottom" timestamp="1604055697464">
+    <state x="895" y="308" key="FileChooserDialogImpl/0.30.1920.1050@0.30.1920.1050" timestamp="1604237982205" />
+    <state width="1444" height="287" key="GridCell.Tab.0.bottom" timestamp="1604252792839">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1446" height="287" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1604055697464" />
-    <state width="1446" height="287" key="GridCell.Tab.0.center" timestamp="1604055697464">
+    <state width="1444" height="287" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1604252792839" />
+    <state width="1444" height="287" key="GridCell.Tab.0.center" timestamp="1604252792838">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1446" height="287" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1604055697464" />
-    <state width="1446" height="287" key="GridCell.Tab.0.left" timestamp="1604055697464">
+    <state width="1444" height="287" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1604252792838" />
+    <state width="1444" height="287" key="GridCell.Tab.0.left" timestamp="1604252792838">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1446" height="287" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1604055697464" />
-    <state width="1446" height="287" key="GridCell.Tab.0.right" timestamp="1604055697464">
+    <state width="1444" height="287" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1604252792838" />
+    <state width="1444" height="287" key="GridCell.Tab.0.right" timestamp="1604252792839">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1446" height="287" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1604055697464" />
+    <state width="1444" height="287" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1604252792839" />
     <state x="590" y="251" key="SettingsEditor" timestamp="1602229411517">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="590" y="251" key="SettingsEditor/0.30.1920.1050@0.30.1920.1050" timestamp="1602229411517" />
-    <state x="656" y="378" key="com.intellij.ide.util.TipDialog" timestamp="1604044574383">
+    <state x="656" y="378" key="com.intellij.ide.util.TipDialog" timestamp="1604237959701">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="656" y="378" key="com.intellij.ide.util.TipDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1604044574383" />
+    <state x="656" y="378" key="com.intellij.ide.util.TipDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1604237959701" />
     <state x="656" y="153" width="607" height="804" key="find.popup" timestamp="1602228988130">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
